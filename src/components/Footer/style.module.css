@@ -23,8 +23,16 @@
     }
 }
 
+.footerIcon{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
 .footerLink{
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width:950px){
