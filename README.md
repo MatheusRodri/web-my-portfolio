@@ -14,9 +14,10 @@
 
 ## Funcionalidades
 
-- Funcionalidade 1
-- Funcionalidade 2
-- Funcionalidade 3
+- Exibição de projetos desenvolvidos
+- Descrição detalhada de cada projeto
+- Links para repositórios no GitHub
+- Contato via LinkedIn
 
 ## Tecnologias Utilizadas
 
