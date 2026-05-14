@@ -1,0 +1,18 @@
+- [ ] Implementar Contexto de Idioma e Sistema de Tradução
+    - [ ] Criar `translations.ts` com conteúdo em PT, EN e ES
+    - [ ] Criar `LanguageContext.tsx`
+    - [ ] Envolver o `_app.tsx` com o `LanguageProvider`
+- [ ] Redesenhar Estilos Globais
+    - [ ] Atualizar `globals.css` com nova paleta de cores e tipografia
+- [ ] Implementar Componente de Seleção de Idioma
+    - [ ] Criar componente `LanguageSwitcher`
+    - [ ] Adicioná-lo ao cabeçalho/seção inicial
+- [ ] Redesenhar e Traduzir Seções
+    - [ ] `InitialSection`
+    - [ ] `AboutSection`
+    - [ ] `SkillSection`
+    - [ ] `ExperienceSection`
+    - [ ] `AcademicSection`
+    - [ ] `ProjectsSection`
+    - [ ] `FooterSection`
+- [ ] Polimento Final e Verificação de Responsividade
