@@ -183,7 +183,7 @@ export const translations = {
     },
     about: {
       title: "Sobre Mí",
-      content: "Descubrí el mundo de la tecnología en 2018 con Scratch, C# y mantenimiento de redes. Después de la secundaria, inicié Ciencias de la Computación en Anhembi Morumbi, luego me trasladé a Senac buscando mayores desafíos matemáticos. Trabajando en Banco Santander, cambié a Sistemas de Información para alinear mis estudios con mi carrera. Me encanta aprender y enseñar; comparto mis conocimientos en Medium, Reddit e Instagram en mi tiempo libre."
+      content: "Descubrí el mundo de la tecnología en 2018 con Scratch, C# y mantenimiento de redes. Después de la secundaria, inicié Ciencias de la Computación en Anhembi Morumbi, luego me trasladé a Senac buscando mayores desafíos matemáticos. Trabajando en Banco Santander, cambié a Sistemas de Información para alinear mis estudios con mi carreira. Me encanta aprender y enseñar; comparto mis conocimientos en Medium, Reddit e Instagram en mi tiempo libre."
     },
     skills: {
       title: "Habilidades Técnicas"
@@ -223,7 +223,7 @@ export const translations = {
     },
     projects: {
       title: "Proyectos Destacados",
-      viewProject: "Ver Proyecto",
+      viewProject: "Ver Projeto",
       items: [
         {
           name: "Fin Life",

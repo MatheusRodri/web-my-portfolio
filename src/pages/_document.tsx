@@ -7,8 +7,7 @@ export default function Document() {
   return (
     <Html lang="pt">
       <Head>
-        <title>Tech Matheus</title>
-        {/* Modern meta tags and favicon links would go here */}
+        {/* Favicon and other meta tags go here. Title should be in _app or specific pages. */}
       </Head>
       <body>
         <Main />
