@@ -1,60 +1,100 @@
 .initialSection {
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    height: max-content;
-    max-width: 100dvw;
-    padding: 50px;
-    border-bottom: 5px solid var(--whiteMain);
+    justify-content: space-between;
+    padding: 120px 10% 80px;
+    gap: 4rem;
 }
 
 .initialText {
-    color: var(--text-color);
-    width: 50%;
+    flex: 1;
+    max-width: 600px;
 }
 
-.title{
-    font-size:5rem;
-    font-weight: bold;
+.title {
+    font-size: 4rem;
+    line-height: 1.1;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, var(--blue-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.subtitle{
-    font-size: 2.5rem;
+.subtitle {
+    font-size: 1.5rem;
+    color: var(--blue-primary);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .description {
-    font-size: 1.5rem;
-    margin-top: 20px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1rem;
+}
+
+.primaryBtn {
+    background: var(--blue-primary);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.secondaryBtn {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
 .initialImage {
-    img {
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;
-    }
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width:950px){
-    .initialSection{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-    }
-    .initialText {
-        width: 100%;
+.imageContainer {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+    .initialSection {
+        flex-direction: column-reverse;
         text-align: center;
+        padding-top: 150px;
+        gap: 2rem;
     }
-    .title{
+
+    .title {
         font-size: 3rem;
     }
-    .initialImage{
-        margin-top: 30px;
-        img{
-            width: 300px;
-            height: 300px;
-        }
+
+    .imageContainer {
+        width: 300px;
+        height: 300px;
     }
 }

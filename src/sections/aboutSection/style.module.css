@@ -1,32 +1,42 @@
-.aboutSection{
+.aboutSection {
+    padding: 100px 10%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+}
+
+.aboutContent {
+    max-width: 900px;
     width: 100%;
-    height: max-content;
-    padding: 50px;
-    border-bottom: 5px solid var(--whiteMain);
 }
 
-.aboutContent{
-    color: #fff;
-}
-
-.aboutTitle{
+.aboutTitle {
     font-size: 2.5rem;
+    color: var(--blue-accent);
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
 }
 
-.aboutText{
-    margin-top: 20px;
-    font-size: 1.5rem;
-    line-height: 1.6;
-    text-align: justify;
+.aboutTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--blue-primary);
+    border-radius: 2px;
 }
 
-@media screen and (max-width: 950px) {
+.aboutText {
+    font-size: 1.15rem;
+    color: var(--text-main);
+    line-height: 1.8;
+    padding: 2.5rem;
+}
+
+@media (max-width: 768px) {
     .aboutSection {
-        padding: 20px;
         height: auto;
     }
     
