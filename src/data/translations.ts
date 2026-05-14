@@ -29,6 +29,13 @@ export const translations = {
       present: "Presente",
       items: [
         {
+          company: "Cielo",
+          role: "Estagiário de Analytics & BI",
+          period: "Dezembro/2025 - Presente",
+          techs: "Python, SQL, Databricks, Excel, Power BI",
+          description: "Atualmente em estágio na Cielo, atuo no time de Analytics & BI, responsável pela construção de dashboards em Power BI, manipulação de dados com SQL e Python, automações em PySpark e Excel. Desenvolvi um orquestrador de jobs do Databricks, na qual mantém jobs com dependencia externa (csv, xlsx...)"
+        },
+        {
           company: "Santander Brasil",
           role: "Estagiário de Riscos",
           period: "Julho/2023 - Julho/2025",
@@ -111,10 +118,17 @@ export const translations = {
       present: "Present",
       items: [
         {
+          company: "Cielo",
+          role: "Analytics & BI Intern",
+          period: "December 2025 - Present",
+          techs: "Python, SQL, Databricks, Excel, Power BI",
+          description: "Currently interning at Cielo in the Analytics & BI team, responsible for building Power BI dashboards, data manipulation with SQL and Python, and automations in PySpark and Excel. Developed a Databricks job orchestrator that maintains jobs with external dependencies (csv, xlsx...)"
+        },
+        {
           company: "Santander Brazil",
           role: "Risk Management Intern",
           period: "July 2023 - July 2025",
-          techs: "Python, SQL, SAS Guide Enterprise, Databricks, Excel & Power BI",
+          techs: "Python, SQL, SAS Guide Enterprise, Databricks, Excel, Power BI",
           description: "Worked within the E2, E3 & GIU risk policy teams. Manipulated data using SQL and PySpark (Databricks/SAS), created executive presentations, and developed Power BI reports and automations to streamline strategic analysis."
         }
       ]
@@ -193,10 +207,17 @@ export const translations = {
       present: "Presente",
       items: [
         {
+          company: "Cielo",
+          role: "Pasante de Analytics & BI",
+          period: "Diciembre/2025 - Presente",
+          techs: "Python, SQL, Databricks, Excel, Power BI",
+          description: "Actualmente de pasantía en Cielo, trabajo en el equipo de Analytics & BI, responsable de la construcción de dashboards en Power BI, manipulación de datos con SQL y Python, automatizaciones en PySpark y Excel. Desarrollé un orquestador de jobs de Databricks, el cual mantiene jobs con dependencia externa (csv, xlsx...)"
+        },
+        {
           company: "Santander Brasil",
           role: "Pasante de Riesgos",
           period: "Julio/2023 - Julio/2025",
-          techs: "Python, SQL, SAS Guide Enterprise, Databricks, Excel y Power BI",
+          techs: "Python, SQL, SAS Guide Enterprise, Databricks, Excel, Power BI",
           description: "Trabajé en el equipo de políticas de riesgo E2, E3 y GIU. Manipulé datos con SQL e PySpark (Databricks/SAS), creé presentaciones para la directiva y reportes en Power BI, además de desarrollar automatizaciones para agilizar procesos."
         }
       ]

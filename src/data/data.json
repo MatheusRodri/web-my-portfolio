@@ -1,36 +1,32 @@
 {
-    "name_user":"Matheus Rodrigues",
-
-    "tech_user":"Analista de dados e Desenvolvedor Full Stack",
-    
-    "resume_user":"Olá, sou o Matheus, uma pessoa apaixonada por tecnologia e desenvolvimento no geral.",
-
-    "about_user":"Descobri o mundo da tecnologia em 2018, na qual tive contato com SCRATCH, CSharp, MySQL, manutenção de computadores e redes, logo ao finalizar o ensino médio, ingressei na universidade Anhembi Morumbi, no curso de Ciência da computação, pouco mais de 1 ano, resolvi, buscar mais desafios, então fiz a transferência para o Centro Universitário Senac, onde tive um contato bem forte com a matemática que todos falavam (Cálculo 1, Cálculo 2...) pouco tempo depois, verifiquei que, o que estava vendo não estava alinhado com o que estava trabalhando no meu estágio no Banco Santander Brasil, então fiz a última troca de curso, para sistema da informação. Uma coisa que sempre gostei de fazer, é aprender e ensinar as pessoas no meu tempo livre, se eu tiver muito atarefado, eu tento arranjar um tempinho nem que seja 1 minuto para ensinar alguém, alinhado a isso resolvi criar algumas páginas no Medium, Reddit, X e Instagram para transmitir o meu conhecimento mesmo que nesse momento seja apenas um pouco.",
-
-    "Skills_user":[
+    "name_user": "Matheus Rodrigues",
+    "tech_user": "Analista de dados e Desenvolvedor Full Stack",
+    "resume_user": "Olá, sou o Matheus, uma pessoa apaixonada por tecnologia e desenvolvimento no geral.",
+    "about_user": "Descobri o mundo da tecnologia em 2018, na qual tive contato com SCRATCH, CSharp, MySQL, manutenção de computadores e redes, logo ao finalizar o ensino médio, ingressei na universidade Anhembi Morumbi, no curso de Ciência da computação, pouco mais de 1 ano, resolvi, buscar mais desafios, então fiz a transferência para o Centro Universitário Senac, onde tive um contato bem forte com a matemática que todos falavam (Cálculo 1, Cálculo 2...) pouco tempo depois, verifiquei que, o que estava vendo não estava alinhado com o que estava trabalhando no meu estágio no Banco Santander Brasil, então fiz a última troca de curso, para sistema da informação. Uma coisa que sempre gostei de fazer, é aprender e ensinar as pessoas no meu tempo livre, se eu tiver muito atarefado, eu tento arranjar um tempinho nem que seja 1 minuto para ensinar alguém, alinhado a isso resolvi criar algumas páginas no Medium, Reddit, X e Instagram para transmitir o meu conhecimento mesmo que nesse momento seja apenas um pouco.",
+    "Skills_user": [
         {
-            "name":"Python",
-            "img":"/assets/logo_python.png"
+            "name": "Python",
+            "img": "/assets/logo_python.png"
         },
         {
-            "name":"Sql",
-            "img":"/assets/logo_sql.png"
+            "name": "Sql",
+            "img": "/assets/logo_sql.png"
         },
         {
-            "name":"Excel",
-            "img":"/assets/logo_excel.png"
+            "name": "Excel",
+            "img": "/assets/logo_excel.png"
         },
         {
-            "name":"Power BI",
-            "img":"/assets/logo_powerbi.png"
+            "name": "Power BI",
+            "img": "/assets/logo_powerbi.png"
         },
         {
-            "name":"HTML",
-            "img":"/assets/logo_html.png"
+            "name": "HTML",
+            "img": "/assets/logo_html.png"
         },
         {
-            "name":"CSS",
-            "img":"/assets/logo_css.png"
+            "name": "CSS",
+            "img": "/assets/logo_css.png"
         },
         {
             "name": "JavaScript",
@@ -45,22 +41,30 @@
             "img": "/assets/logo_node.png"
         }
     ],
-    "experience_user":[
+    "experience_user": [
         {
-            "company":"Santander Brasil",
-            "role":"Estagiário de Riscos",
-            "dt_inicio":"Julho/2023",
-            "dt_fim":"Julho/2025",
-            "techs":"Python, SQL, SAS Guide Enterprise, Databricks, Excel e Power BI",
+            "company": "Cielo",
+            "role": "Estagiário de Analytics & BI",
+            "dt_inicio": "Dezembro/2025",
+            "dt_fim": "Atualmente",
+            "techs": "Python, SQL, Databricks, Excel e Power BI",
+            "description": "Estágio em Analytics & BI, onde sou responsável por desenvolver dashboards no PowerBI, utilizando Python e SQL, automações em PySpark e Excel. Desenvolvi um orquestrador de jobs do Databricks, na qual mantém jobs com dependencia externa (csv, xlsx...)"
+        },
+        {
+            "company": "Santander Brasil",
+            "role": "Estagiário de Riscos",
+            "dt_inicio": "Julho/2023",
+            "dt_fim": "Julho/2025",
+            "techs": "Python, SQL, SAS Guide Enterprise, Databricks, Excel e Power BI",
             "description": "Tive a oportunidade de trabalhar em Riscos no time de políticas E2, E3 & GIU na qual manipulei dados, usando SQL e PySpark com as ferramentas Databricks e SAS Entreprise Guide, criação de apresentações para diretores, geração de relatórios com Excel e PowerBI e automações nas quais possibilitaram uma atualização mais rápida e possibilitando que focassemos em análises mais estratégicas. "
         }
     ],
-    "academic_user":[
+    "academic_user": [
         {
-            "institution":"Centro Universitário Senac",
-            "course":"Sistemas de Informação",
-            "dt_inicio":"Agosto/2024",
-            "dt_fim":"Presente"
+            "institution": "Centro Universitário Senac",
+            "course": "Sistemas de Informação",
+            "dt_inicio": "Agosto/2024",
+            "dt_fim": "Presente"
         },
         {
             "institution": "Centro Universitário Senac",
@@ -75,35 +79,34 @@
             "dt_fim": "Junho/2022"
         }
     ],
-    "projects_user":[
+    "projects_user": [
         {
-          "name":"Fin Life",
-          "techs":"TypeScript, React Native, NextJs, NodeJs e MySql",
-          "description":"O projeto se trata de projeto pessoal que sempre quis desenvolver, a ideia é as pessoas poderem gerenciar suas finanças de forma simples e prática(adicionando despesas, receitas e visualizando relatórios)",
-          "link":"https://github.com/MatheusRodri/FinLife"
+            "name": "Fin Life",
+            "techs": "TypeScript, React Native, NextJs, NodeJs e MySql",
+            "description": "O projeto se trata de projeto pessoal que sempre quis desenvolver, a ideia é as pessoas poderem gerenciar suas finanças de forma simples e prática(adicionando despesas, receitas e visualizando relatórios)",
+            "link": "https://github.com/MatheusRodri/FinLife"
         },
         {
-          "name":"Dashboard Uber",
-          "techs":"Python, SQL, Pandas e Power BI",
-          "description":"O projeto se trata de um tratamento de dados simples da minha conta Uber (A origem ela foi ocultada, mas você pode replicar com suas informações) e a construção de dashboard simples trazendo algumas informações como quantidade de corridas, valor total e muitas outras informações.",
-          "link":"https://github.com/MatheusRodri/data_uber-user-data_py"     
+            "name": "Dashboard Uber",
+            "techs": "Python, SQL, Pandas e Power BI",
+            "description": "O projeto se trata de um tratamento de dados simples da minha conta Uber (A origem ela foi ocultada, mas você pode replicar com suas informações) e a construção de dashboard simples trazendo algumas informações como quantidade de corridas, valor total e muitas outras informações.",
+            "link": "https://github.com/MatheusRodri/data_uber-user-data_py"
         },
         {
-          "name":"Dashboard Spotify",
-          "techs":"Python, SQL, Databricks,Pandas e Power BI",
-          "description":"O projeto se trata de um tratamento de dados simples da minha conta Spotify (A origem ela foi ocultada, mas você pode replicar com suas informações) e a construção de dashboard simples trazendo algumas informações como tempo total de reprodução etc...",
-          "link":"https://github.com/MatheusRodri/data_spotify-user_py"     
+            "name": "Dashboard Spotify",
+            "techs": "Python, SQL, Databricks,Pandas e Power BI",
+            "description": "O projeto se trata de um tratamento de dados simples da minha conta Spotify (A origem ela foi ocultada, mas você pode replicar com suas informações) e a construção de dashboard simples trazendo algumas informações como tempo total de reprodução etc...",
+            "link": "https://github.com/MatheusRodri/data_spotify-user_py"
         }
-        
     ],
-    "contact_user":{
-        "email":"matheus.rj25@hotmail.com",
-        "linkedin":"https://www.linkedin.com/in/matheus-rodrigues-mrj/",
-        "github":"https://github.com/MatheusRodri",
-        "portifolio":"https://lnkd.in/dWZG5pZP",
-        "medium":"https://lnkd.in/dQhTT3SA",
-        "reddit":"https://lnkd.in/drw8P-tZ",
-        "instagram":"https://lnkd.in/d3sC2b5q",
-        "x":"https://x.com/OTechMatheus"
+    "contact_user": {
+        "email": "matheus.rj25@hotmail.com",
+        "linkedin": "https://www.linkedin.com/in/matheus-rodrigues-mrj/",
+        "github": "https://github.com/MatheusRodri",
+        "portifolio": "https://lnkd.in/dWZG5pZP",
+        "medium": "https://lnkd.in/dQhTT3SA",
+        "reddit": "https://lnkd.in/drw8P-tZ",
+        "instagram": "https://lnkd.in/d3sC2b5q",
+        "x": "https://x.com/OTechMatheus"
     }
 }
