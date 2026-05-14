@@ -1,24 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Main Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-:root{
-  --blueMain: #1e0094;
-  --blueSecondary: #10014d;
-  --whiteMain: #fff;
-  --blackMain: #000;
-  --text-color: #fff;
+/* Design System Tokens */
+:root {
+  --bg-dark: #020617; /* Deep Navy Background */
+  --bg-card: rgba(15, 23, 42, 0.7);
+  --blue-primary: #3b82f6; /* Accent Blue */
+  --blue-secondary: #1d4ed8; /* Hover/Active Blue */
+  --blue-accent: #60a5fa; /* Light Accent Blue */
+  --text-main: #f8fafc; /* Primary Text Color */
+  --text-muted: #94a3b8; /* Secondary/Muted Text */
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(30, 41, 59, 0.5);
 }
 
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   width: 100%;
-  background: #10014D;
-    background: linear-gradient(180deg, rgba(16, 1, 77, 1) 0%, rgba(30, 0, 148, 1) 100%);
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-dark);
+  /* Subtle gradient background for depth */
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.15) 0, transparent 50%), 
+    radial-gradient(at 100% 100%, rgba(30, 64, 175, 0.15) 0, transparent 50%);
+  color: var(--text-main);
+  font-family: 'Outfit', sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Glassmorphism Utility Class */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-primary);
+}
+
+/* Scroll Animation Base Classes */
+.reveal-on-scroll {
+  opacity: 0; /* Hidden by default, shown via ScrollReveal */
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
 }
