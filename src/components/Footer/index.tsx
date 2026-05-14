@@ -1,49 +1,59 @@
 import Link from "next/link";
 import style from './style.module.css';
 import data from '@/data/data.json';
-import {FaLinkedin, FaGithub, FaMedium, FaRedditAlien, FaInstagram, FaXTwitter} from 'react-icons/fa6';
+import {FaLinkedin, FaGithub, FaMedium, FaRedditAlien, FaInstagram, FaXTwitter, FaEnvelope} from 'react-icons/fa6';
+import { useLanguage } from '@/context/LanguageContext';
 
 export function Footer(){
+    const { t } = useLanguage();
+
     return(
-        <footer id='contact' className={`${style.footerContainer} reveal-on-scroll`}>
-            <ul className={style.footerList}>
-                <li className={style.footerItem}>
-                    <Link href={data.contact_user.linkedin} className={style.footerLink}>
-                        <FaLinkedin className={style.footerIcon} />
-                        <span className={style.footerText}>LinkedIn</span>
-                    </Link>
-                </li>
-                <li className={style.footerItem}>
-                    <Link href={data.contact_user.github} className={style.footerLink}>
-                        <FaGithub className={style.footerIcon} />
-                        <span className={style.footerText}>GitHub</span>
-                    </Link>
-                </li>
-                <li className={style.footerItem}>
-                    <Link href={data.contact_user.medium} className={style.footerLink}>
-                        <FaMedium className={style.footerIcon} />
-                        <span className={style.footerText}>Medium</span>
-                    </Link>
-                </li>
-                <li className={style.footerItem}>
-                    <Link href={data.contact_user.reddit} className={style.footerLink}>
-                        <FaRedditAlien className={style.footerIcon} />
-                        <span className={style.footerText}>Reddit</span>
-                    </Link>
-                </li>
-                <li className={style.footerItem}>
-                    <Link href={data.contact_user.instagram} className={style.footerLink}>
-                        <FaInstagram className={style.footerIcon}/>
-                        <span className={style.footerText}>Instagram</span>
-                    </Link>
-                </li>
-                <li className={style.footerItem}>
-                    <Link href={data.contact_user.x} className={style.footerLink}>
-                        <FaXTwitter className={style.footerIcon} />
-                        <span className={style.footerText}>X</span>
-                    </Link>
-                </li>
-            </ul>
+        <footer id='contact' className={style.footer}>
+            <div className={style.container}>
+                <div className={style.top}>
+                    <div className={style.contactInfo}>
+                        <h2 className={style.title}>{t.nav.contact}</h2>
+                        <a href={`mailto:${data.contact_user.email}`} className={style.emailLink}>
+                            <FaEnvelope /> {data.contact_user.email}
+                        </a>
+                    </div>
+                    <ul className={style.socialList}>
+                        <li>
+                            <Link href={data.contact_user.linkedin} target="_blank" aria-label="LinkedIn">
+                                <FaLinkedin />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={data.contact_user.github} target="_blank" aria-label="GitHub">
+                                <FaGithub />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={data.contact_user.medium} target="_blank" aria-label="Medium">
+                                <FaMedium />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={data.contact_user.reddit} target="_blank" aria-label="Reddit">
+                                <FaRedditAlien />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={data.contact_user.instagram} target="_blank" aria-label="Instagram">
+                                <FaInstagram />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href={data.contact_user.x} target="_blank" aria-label="X">
+                                <FaXTwitter />
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.bottom}>
+                    <p className={style.rights}>{t.footer.rights}</p>
+                </div>
+            </div>
         </footer>
     )
-} 
+} 
