@@ -1,5 +1,8 @@
 .experienceSection {
     padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .experienceTitle {
@@ -8,13 +11,15 @@
     margin-bottom: 3rem;
     position: relative;
     display: inline-block;
+    text-align: center;
 }
 
 .experienceTitle::after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60px;
     height: 4px;
     background: var(--blue-primary);
@@ -25,6 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
     max-width: 900px;
 }
 

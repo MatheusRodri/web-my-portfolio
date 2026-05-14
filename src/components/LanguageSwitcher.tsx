@@ -11,9 +11,9 @@ const LanguageSwitcher: React.FC = () => {
 
   // Configuration for supported languages
   const languages: { code: Language; label: string; flag: string }[] = [
-    { code: 'pt', label: 'PT', flag: '🇧🇷' },
-    { code: 'en', label: 'EN', flag: '🇺🇸' },
-    { code: 'es', label: 'ES', flag: '🇪🇸' },
+    { code: 'pt', label: 'PT', flag: 'https://flagcdn.com/w40/br.png' },
+    { code: 'en', label: 'EN', flag: 'https://flagcdn.com/w40/us.png' },
+    { code: 'es', label: 'ES', flag: 'https://flagcdn.com/w40/es.png' },
   ];
 
   return (
@@ -25,7 +25,7 @@ const LanguageSwitcher: React.FC = () => {
           className={`lang-btn ${language === lang.code ? 'active' : ''}`}
           aria-label={`Switch to ${lang.label}`}
         >
-          <span className="flag">{lang.flag}</span>
+          <img src={lang.flag} alt={`${lang.label} flag`} className="flag-img" />
           <span className="label">{lang.label}</span>
         </button>
       ))}
@@ -53,7 +53,7 @@ const LanguageSwitcher: React.FC = () => {
           gap: 0.4rem;
           font-family: 'Outfit', sans-serif;
           font-weight: 500;
-          font-size: 0.85rem;
+          font-size: 1.1rem;
           transition: all 0.2s ease;
         }
         .lang-btn:hover {
@@ -65,8 +65,11 @@ const LanguageSwitcher: React.FC = () => {
           color: #ffffff;
           box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
         }
-        .flag {
-          font-size: 1.1rem;
+        .flag-img {
+          width: 24px;
+          height: auto;
+          border-radius: 2px;
+          object-fit: cover;
         }
         @media (max-width: 640px) {
           .label {
