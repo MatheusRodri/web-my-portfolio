@@ -3,25 +3,30 @@ import style from './style.module.css';
 interface ExperienceProps {
     company: string;
     role: string;
-    dt_start: string;
-    dt_end: string;
+    period: string;
     description: string;
     techs: string;
 }
 
-export function Experience({company,role,dt_start,dt_end,description,techs}:ExperienceProps) {
+export function Experience({company,role,period,description,techs}:ExperienceProps) {
     return (
-        <div className={style.experience}>
-            <div className={style.experienceHeader}>
-                <h3 className={style.experienceCompany}>{company}</h3> 
-                <span className={style.experienceRole}>{role} </span>
-                |
-                <span className={style.experienceDate}> {dt_start} - {dt_end}</span>
+        <div className={`${style.experience} glass-card`}>
+            <div className={style.header}>
+                <div className={style.mainInfo}>
+                    <h3 className={style.company}>{company}</h3>
+                    <p className={style.role}>{role}</p>
+                </div>
+                <div className={style.period}>{period}</div>
             </div>
 
-            <p className={style.techs}><span>Techs:</span> {techs}</p>
-            <p className={style.experienceDescription}> <span>Descrição:</span> {description}</p>
-
+            <div className={style.content}>
+                <p className={style.description}>{description}</p>
+                <div className={style.techList}>
+                    {techs.split(',').map((tech, i) => (
+                        <span key={i} className={style.techBadge}>{tech.trim()}</span>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }
