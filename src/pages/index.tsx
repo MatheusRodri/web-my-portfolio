@@ -9,16 +9,25 @@ import SkillSection from "@/sections/skillSection";
 import styles from '@/styles/Home.module.css';
 import FooterSection from '@/sections/footerSection';
 
+/**
+ * Main Portfolio Home Page
+ * Assembles all sections and initializes scroll animations
+ */
 export default function Home() {
 
   useEffect(() => {
-
+    /**
+     * Dynamically imports and initializes ScrollReveal.
+     * ScrollReveal is only initialized on the client side.
+     */
     const initializeScrollReveal = async () => {
       const ScrollRevealModule = (await import('scrollreveal')).default;
       if (typeof window !== 'undefined') {
         if (!window.sr) {
           window.sr = ScrollRevealModule();
         }
+        
+        // Configuration for sections revealed while scrolling
         window.sr.reveal('.reveal-on-scroll', {
           delay: 200,
           distance: '50px',
@@ -29,6 +38,7 @@ export default function Home() {
           reset: true
         });
 
+        // Configuration for text elements that scroll in from the left
         window.sr.reveal('.scroll-to-text', {
           delay: 500,
           distance: '50px',
@@ -38,9 +48,6 @@ export default function Home() {
           interval: 0,
           reset: true
         });
-
-        
-        
       }
     };
 
@@ -48,18 +55,27 @@ export default function Home() {
 
   }, []); 
 
-
-
-
   return (
     <main className={styles.main}>
+      {/* Introduction and Hero Section */}
       <InitialSection />
+      
+      {/* Professional and Personal Background */}
       <AboutSection />
+      
+      {/* Technical Proficiencies */}
       <SkillSection />
+      
+      {/* Professional Career Timeline */}
       <ExperienceSection />
+      
+      {/* Educational Background */}
       <AcademicSection/>
+      
+      {/* Showcased Projects */}
       <ProjectsSection />
-      {/* <ContactSection /> */}
+      
+      {/* Contact and Footer Information */}
       <FooterSection/>
     </main>
   );
