@@ -1,5 +1,5 @@
 .experience {
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     margin-bottom: 2rem;
     transition: transform 0.3s ease;
 }
@@ -74,7 +74,8 @@
 
 @media screen and (max-width: 950px) {
     .experience {
-        width: 80%;
+        width: 100%;
+        padding: 1.25rem;
         margin-bottom: 20px;
     }
 }

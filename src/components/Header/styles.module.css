@@ -63,11 +63,16 @@
     height: 0.2rem;
     background: var(--text-main);
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 968px) {
     .hamburger {
         display: flex;
+    }
+
+    .actions {
+        z-index: 1001;
     }
 
     .nav {
@@ -84,9 +89,25 @@
         transition: right 0.4s ease-in-out;
     }
 
+    .navActive {
+        right: 0;
+    }
+
     .navList {
         flex-direction: column;
         align-items: center;
         gap: 3rem;
+    }
+
+    .hamburgerActive .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburgerActive .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerActive .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }

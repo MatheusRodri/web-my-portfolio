@@ -89,7 +89,7 @@ export const translations = {
       ]
     },
     footer: {
-      rights: "© 2024 Matheus Rodrigues. Todos os direitos reservados."
+      rights: "© 2026 Matheus Rodrigues. Todos os direitos reservados."
     }
   },
   en: {
@@ -178,7 +178,7 @@ export const translations = {
       ]
     },
     footer: {
-      rights: "© 2024 Matheus Rodrigues. All rights reserved."
+      rights: "© 2026 Matheus Rodrigues. All rights reserved."
     }
   },
   es: {
@@ -267,7 +267,7 @@ export const translations = {
       ]
     },
     footer: {
-      rights: "© 2024 Matheus Rodrigues. Todos los derechos reservados."
+      rights: "© 2026 Matheus Rodrigues. Todos los derechos reservados."
     }
   }
 };

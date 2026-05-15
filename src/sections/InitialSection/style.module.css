@@ -89,6 +89,10 @@
         gap: 2rem;
     }
 
+    .ctaGroup {
+        justify-content: center;
+    }
+
     .title {
         font-size: 3rem;
     }
